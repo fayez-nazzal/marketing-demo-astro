@@ -37,6 +37,18 @@ collections:
                 fields:
                   - { label: "Text", name: "text", widget: "string" }
                   - { label: "URL", name: "url", widget: "string" }
+          - label: "Hero 2"
+            name: "hero2"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Subheading", name: "subheading", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+              - label: "Call to Action"
+                name: "cta"
+                widget: "object"
+                fields:
+                  - { label: "Text", name: "text", widget: "string" }
+                  - { label: "URL", name: "url", widget: "string" }
 media_folder: "src/assets/images"
 public_folder: "src/assets/images"
 backend:
