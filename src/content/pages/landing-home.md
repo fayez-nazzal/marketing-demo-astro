@@ -1,5 +1,5 @@
 ---
-title: Landing Home
+title: New Landing Home
 slug: /
 sections:
   - type: hero
