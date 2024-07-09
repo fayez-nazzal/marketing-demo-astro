@@ -3,7 +3,7 @@ title: Landing Home
 slug: /
 sections:
   - type: hero
-    heading: Faster Systematic Literature Review
+    heading: Faster Systematic Literature Review!
     subheading: Rayyan is trusted by over 500k researchers to speed up their Reviews
     cta:
       text: Start For Free
