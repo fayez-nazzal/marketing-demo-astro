@@ -1,18 +1,46 @@
 collections:
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
-    folder: "src/content/blog" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields for each document, usually in frontmatter
-      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+  - name: "global"
+    label: "Global Settings"
+    files:
+      - name: "navigation"
+        label: "Navigation"
+        file: "src/content/global/navigation.yml"
+        fields:
+          - { label: "Logo", name: "logo", widget: "image" }
+          - label: "Menu Items"
+            name: "menu_items"
+            widget: "list"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+
+  - name: "pages"
+    label: "Pages"
+    folder: "src/content/pages"
+    create: true
+    fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Featured Image", name: "thumbnail", widget: "image" }
-      - { label: "Rating (scale of 1-5)", name: "rating", widget: "number" }
-      - { label: "Body", name: "body", widget: "markdown" }
-media_folder: "src/assets/images" # Location where files will be stored in the repo
-public_folder: "src/assets/images" # The src attribute for uploaded media
+      - { label: "URL Path", name: "slug", widget: "string" }
+      - label: "Sections"
+        name: "sections"
+        widget: "list"
+        types:
+          - label: "Hero"
+            name: "hero"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Subheading", name: "subheading", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+              - label: "Call to Action"
+                name: "cta"
+                widget: "object"
+                fields:
+                  - { label: "Text", name: "text", widget: "string" }
+                  - { label: "URL", name: "url", widget: "string" }
+media_folder: "src/assets/images"
+public_folder: "src/assets/images"
 backend:
   name: github
-  repo: fayez-nazzal/marketing-demo
+  repo: fayez-nazzal/rayyan-marketing
   branch: master
+publish_mode: editorial_workflow
