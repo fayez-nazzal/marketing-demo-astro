@@ -1,54 +1,20 @@
 collections:
-  - name: "global"
-    label: "Global Settings"
+  - name: "home-page"
+    label: "Home Page"
     files:
-      - name: "navigation"
-        label: "Navigation"
-        file: "src/content/global/navigation.yml"
+      - name: "home-page"
+        label: "Home Page"
+        file: "src/content/pages/landing-home.md"
         fields:
-          - { label: "Logo", name: "logo", widget: "image" }
-          - label: "Menu Items"
-            name: "menu_items"
-            widget: "list"
-            fields:
-              - { label: "Label", name: "label", widget: "string" }
-              - { label: "URL", name: "url", widget: "string" }
-
-  - name: "pages"
-    label: "Pages"
-    folder: "src/content/pages"
-    create: true
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "URL Path", name: "slug", widget: "string" }
-      - label: "Sections"
-        name: "sections"
-        widget: "list"
-        types:
-          - label: "Hero"
-            name: "hero"
-            fields:
-              - { label: "Heading", name: "heading", widget: "string" }
-              - { label: "Subheading", name: "subheading", widget: "text" }
-              - { label: "Image", name: "image", widget: "image" }
-              - label: "Call to Action"
-                name: "cta"
-                widget: "object"
-                fields:
-                  - { label: "Text", name: "text", widget: "string" }
-                  - { label: "URL", name: "url", widget: "string" }
-          - label: "Hero 2"
-            name: "hero2"
-            fields:
-              - { label: "Heading", name: "heading", widget: "string" }
-              - { label: "Subheading", name: "subheading", widget: "text" }
-              - { label: "Image", name: "image", widget: "image" }
-              - label: "Call to Action"
-                name: "cta"
-                widget: "object"
-                fields:
-                  - { label: "Text", name: "text", widget: "string" }
-                  - { label: "URL", name: "url", widget: "string" }
+          - name: "Title"
+            label: "Title"
+            widget: "string"
+          - name: "tab-title"
+            label: "Tab Title"
+            widget: "string"
+          - name: "image"
+            label: "Image"
+            widget: "image"
 media_folder: "src/assets/images"
 public_folder: "src/assets/images"
 backend:

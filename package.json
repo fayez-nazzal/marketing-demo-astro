@@ -3,27 +3,44 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "tsx generate-types.ts && astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build",
+    "build": "tsx generate-types.ts && astro check && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
     "@astrojs/check": "^0.8.0",
+    "@astrojs/preact": "^3.5.0",
     "@astrojs/tailwind": "^5.1.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/container-queries": "^0.1.1",
     "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.13",
     "astro": "^4.11.5",
+    "daisyui": "^4.12.10",
+    "decap-cms-app": "^3.1.11",
+    "gray-matter": "^4.0.3",
+    "preact": "^10.22.1",
+    "remark-frontmatter": "^5.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-stringify": "^11.0.0",
+    "solid-js": "^1.8.18",
+    "tailwind-scrollbar": "^3.1.0",
     "tailwindcss": "^3.4.4",
-    "typescript": "^5.5.3"
+    "tailwindcss-animate": "^1.0.7",
+    "tailwindcss-flip": "^1.0.0",
+    "to-vfile": "^8.0.0",
+    "typescript": "^5.5.3",
+    "unified": "^11.0.5"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.13",
-    "daisyui": "^4.12.10",
-    "tailwind-scrollbar": "^3.1.0",
-    "tailwindcss-animate": "^1.0.7",
-    "tailwindcss-flip": "^1.0.0"
+    "@types/node": "^20.14.10",
+    "change-case": "^5.4.4",
+    "fast-glob": "^3.3.2",
+    "json-to-ts": "^2.1.0",
+    "tsx": "^4.16.2",
+    "zod": "^3.23.8",
+    "zod-matter": "^0.1.1"
   }
 }
