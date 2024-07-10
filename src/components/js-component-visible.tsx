@@ -11,7 +11,7 @@ const JSComponentVisible = () => {
   }, [count]);
   
   return (
-    <div class="bg-base-content/10 p-5 rounded-lg h-max w-max flex flex-col gap-2"> 
+    <div class="bg-base-content/5 p-5 rounded-lg h-max w-max flex flex-col gap-2"> 
       <h2 class="mt-0">Hey! I'm component 3</h2>
       <p>I have JavaScript .... But I'm fast!</p>
       <p class="text-lg text-error font-bold">{count} seconds have passed since you saw me!</p>

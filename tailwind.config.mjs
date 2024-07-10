@@ -15,6 +15,6 @@ export default {
     require("tailwindcss-flip"),
   ],
   daisyui: {
-    themes: ["aqua", "dark"],
+    themes: ["light", "dark"],
   },
 };

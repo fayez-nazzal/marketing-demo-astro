@@ -8,21 +8,21 @@ import landingHome from "@content/module/landing-home";
 
 <html lang="en">
   <head>
+    <title>{landingHome["tab-title"]}</title>
+    <meta name="description" content="Marketing Demo" />
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>{landingHome["tab-title"]}</title>
+    <meta name="keywords" content="Marketing, Demo" />
+    <meta name="author" content="Rayyan" />
   </head>
-  <body
-    class="w-screen min-h-screen p-20"
-    data-theme="aqua"
-  >
+  <body class="w-screen min-h-screen p-20" data-theme="light">
     <div class="prose text-base-content flex flex-col gap-20">
       <h1 class="text-5xl font-bold">{landingHome.Title}</h1>
       <ZeroJSComponent client:load />
       <JSComponent client:only="preact" />
-      <div class="h-[85vh]" />
+      <div class="h-[85vh]"></div>
       <JSComponentVisible client:visible />
     </div>
   </body>
