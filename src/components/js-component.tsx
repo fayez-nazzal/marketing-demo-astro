@@ -17,7 +17,7 @@ const JSComponent = () => {
       <div>I have JavaScript .... But I'm also fast 🔥!</div>
       <button class="mt-5 btn btn-primary" onClick={onThemeChange}>Change theme</button>
       <p class="w-64">My JavaScript will be loaded on client only, without delaying page load</p>
-      <button class="btn btn-secondary mt-0 font-bold text-lg mt-2" onClick={onScrollBottom}>Scroll to see component 3</button>
+      <button class="btn btn-primary mt-0 font-bold text-lg mt-2" onClick={onScrollBottom}>Scroll to see component 3</button>
     </div>
   );
 };
