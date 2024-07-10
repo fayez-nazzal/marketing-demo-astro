@@ -9,4 +9,7 @@ sections:
       text: CTA
       url: https://rayyan.ai/users/sign_up
     image: src/assets/images/example-placeholder-image.png
+Title: Rayyan Static Marketing Website
+tab-title: Rayyan Landing Demo
+image: src/assets/images/example-placeholder-image.png
 ---
