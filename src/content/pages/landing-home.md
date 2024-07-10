@@ -10,6 +10,6 @@ sections:
       url: https://rayyan.ai/users/sign_up
     image: src/assets/images/example-placeholder-image.png
 Title: Rayyan Static Marketing Website
-tab-title: Rayyan Landing Demo
+tab-title: Rayyan Landing Demo test
 image: src/assets/images/example-placeholder-image.png
 ---
