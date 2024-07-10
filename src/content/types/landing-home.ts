@@ -5,20 +5,7 @@
 Everything here won't be commited to git and will be overwritten on next build. */  
 
 export type TLandingHome = {
-  title: string;
-  slug: string;
-  sections: Section[];
-}
-
-type Section = {
-  type: string;
-  heading: string;
-  subheading: string;
-  cta: Cta;
+  Title: string;
+  'tab-title': string;
   image: string;
-}
-
-type Cta = {
-  text: string;
-  url: string;
 }
